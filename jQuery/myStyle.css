@@ -1,0 +1,49 @@
+@keyframes homepage{
+    0% {background-color:lightpink}
+    20% {background-color:lightsalmon}
+    40% {background-color:rgb(253, 253, 196)}
+    60% {background-color:lightgreen}
+    80%{background-color:lightskyblue}
+    100%{background-color: plum}
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#rps{
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    color: black;
+    transition: transform 1.5s;
+    
+}
+#rps:hover{
+    transform:rotate(360deg);
+}
+#ttt{
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    color: black;
+    transition: transform 1.5s;
+}
+#ttt:hover{
+    transform:rotate(360deg);
+}
+body{
+    background-color: white;
+    animation-name:homepage;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+h1{
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color:black;
+}
+h3{
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color:black;
+}
