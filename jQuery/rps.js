@@ -43,6 +43,7 @@ $("#rock").click(function(){
     findResult();
     logResult();
     counter++;
+    $("#roundTrack").text(counter+"/"+rounds);
     if(counter>=rounds){
         turnOff();
     }
@@ -56,6 +57,7 @@ $("#paper").click(function(){
     findResult();
     logResult();
     counter++;
+    $("#roundTrack").text(counter+"/"+rounds);
     if(counter>=rounds){
         turnOff();
     }
@@ -69,6 +71,7 @@ $("#scissors").click(function(){
     findResult();
     logResult();
     counter++;
+    $("#roundTrack").text(counter+"/"+rounds);
     if(counter>=rounds){
        turnOff();
     }
@@ -90,6 +93,7 @@ function turnOff(){
         $("#scissors").toggle();
         $("#winner").toggle();
         $(".player").toggle();
+        $("#roundTrack").toggle();
         // $("#yourChoice").toggle();
 }
 
