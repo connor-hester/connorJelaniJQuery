@@ -1,11 +1,4 @@
-@keyframes homepage{
-    0% {background-color:lightpink}
-    20% {background-color:lightsalmon}
-    40% {background-color:rgb(253, 253, 196)}
-    60% {background-color:lightgreen}
-    80%{background-color:lightskyblue}
-    100%{background-color: plum}
-}
+
 
 .container1{
     display: flex;
@@ -33,9 +26,6 @@
 }
 body{
     background-color: white;
-    animation-name:homepage;
-    animation-duration:10s;
-    animation-iteration-count: infinite;
 }
 h1{
     text-align: center;

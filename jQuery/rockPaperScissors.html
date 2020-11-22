@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>jQuery Pair Programming</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">  
+    <link href="rpsStyle.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <meta charset="UTF-8">
+    <script src="rps.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container1">
+    <h1>Rock Paper Scissors</h1>
+    <h3>Instructions:</h3>
+    <h4>Select the number of rounds you want to play by using the button options below. Then use the 
+        rock, paper, and scissors buttons to make your choice. After you make a choice, the computer will display it's
+        choice, a winner will be determined and the results shown in the scoreboard. After the rounds are over, click the
+    button that appears to be taken back to the homepage.</h4>
+    <h3 id="roundPicker">How Many Rounds?</h3>
+    <div class="container2">
+        <button id="three">Best of 3</button>
+        <button id="five">Best of 5</button>
+        <button id="seven">Best of 7</button>
+        </div>
+        <h3>Scoreboard</h3>
+    <div class="container2">
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Ties</th>
+            </tr>
+            <tr>
+                <th>You</th>
+                <th id="yourWins"></th>
+                <th id="yourLosses"></th>
+                <th class="ties"></th>
+            </tr>
+            <tr>
+                <th>Computer</th>
+                <th id="cpuWins"></th>
+                <th id="cpuLosses"></th>
+                <th class="ties"></th>
+            </tr>
+        </table>
+        </div>
+        <h3 id="endGameTxt"></h3>
+        <button id="endGame"><a href="index.html">Click Here to Continue</a></button>
+        <h4 id="winner"></h4>
+        <!-- <h3 id="yourChoice">Make Your Choice</h3> -->
+        <div class="container2">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+            </div>
+            <br>
+            <div class="container2">
+                <h4 class="player">You</h4>
+                <h4 class="player">CPU</h4>
+                </div>
+            <br>
+    <div class="container2">
+    <image id="playerHand" src="media/rock.png" height=200px></image>
+    <image id="cpuHand" src="media/cpuHand.png" height=200px></image>
+    </div>
+    </div>
+</body>
