@@ -1,5 +1,5 @@
 let p1Color = "whitesmoke"
-let quote = document.querySelector("h2")
+let quote = document.querySelector("h3")
 started = false
   $("div.tile").click(function colorPicker(){
     started = true
